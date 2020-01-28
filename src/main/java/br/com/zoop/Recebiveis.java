@@ -1,7 +1,10 @@
 package main.java.br.com.zoop;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import main.java.br.com.zoop.antecipacao.Antecipacao;
 
 public class Recebiveis {
 
@@ -10,18 +13,20 @@ public class Recebiveis {
     }
 
     public static void main(String[] args) {
-        String json = ConsultaRecebiveis.getRecebiveis();
-        //String json = "[{\"name\": \"Cake\",\"cakeId\": \"0001\",\"cakeShape\": \"Heart\"}, {\"name\": \"Pie\",\"cakeId\": \"0002\",\"cakeShape\": \"Square\"}]";
-        //JsonArray jsonArray = new JsonParser().parse(json).getAsJsonArray();
+        Antecipacao antecipacao = new Antecipacao();
+        //String retorno = antecipacao.criarAntecipacao();
+        String retorno = antecipacao.simularAntecipacao();
+        System.out.println(retorno);
 
+        //String json = ConsultaRecebiveis.listarRecebiveis();
+        String json = antecipacao.listarAntecipacao();
+        
         JsonObject jsonObject = new JsonParser().parse(json).getAsJsonObject();
-        System.out.println(jsonObject.get("title"));
-
-        ConsultaRecebiveis cr = new ConsultaRecebiveis();
-        try {
-            cr.consultaRecebiveis();
-        } catch (Exception e) {
-            e.printStackTrace();
+        JsonArray jsonArray = new JsonParser().parse(String.valueOf(jsonObject.get("items"))).getAsJsonArray();
+        for (JsonElement pa : jsonArray) {
+            JsonObject paymentObj = pa.getAsJsonObject();
+            String id = paymentObj.get("id").getAsString();
+            System.out.println(id);
         }
     }
 }

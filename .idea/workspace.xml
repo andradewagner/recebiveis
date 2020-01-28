@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82826b0b-9140-4215-a882-a375902641ba" name="Default Changelist" comment="" />
+    <list default="true" id="82826b0b-9140-4215-a882-a375902641ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zoop/antecipacao/Antecipacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zoop/antecipacao/interfaces/AntecipacaoServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zoop/ConsultaRecebiveis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zoop/ConsultaRecebiveis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zoop/Recebiveis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zoop/Recebiveis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/java/br/com/zoop/ConsultaRecebiveis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/br/com/zoop/ConsultaRecebiveis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/java/br/com/zoop/Recebiveis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/br/com/zoop/Recebiveis.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,15 +24,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -30,10 +37,10 @@
   <component name="ProjectId" id="1WwhXX6HL4P1OvvvQI8oyU92hCX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -50,7 +57,7 @@
       <module name="recebiveis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.br.com.zoop.*" />
+          <option name="PATTERN" value="main.java.br.com.zoop.antecipacao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,10 +89,15 @@
       <screen x="0" y="27" width="3840" height="2068" />
     </state>
     <state x="1415" y="640" width="1000" height="839" key="#Project_Structure/0.27.3840.2068@0.27.3840.2068" timestamp="1580080520179" />
-    <state x="1603" y="774" width="624" height="572" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580070413012">
-      <screen x="0" y="27" width="3840" height="2068" />
+    <state x="803" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1580237930493">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="803" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1580237930493" />
+    <state x="842" y="407" width="549" height="292" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580221388906">
+      <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="1603" y="774" width="624" height="572" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.3840.2068@0.27.3840.2068" timestamp="1580070413012" />
+    <state x="842" y="407" width="549" height="292" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1580221388906" />
     <state x="1602" y="953" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1580080856261">
       <screen x="0" y="27" width="3840" height="2068" />
     </state>
@@ -94,22 +106,42 @@
       <screen x="0" y="27" width="3840" height="2068" />
     </state>
     <state x="1582" y="744" width="665" height="632" key="FileChooserDialogImpl/0.27.3840.2068@0.27.3840.2068" timestamp="1580079868132" />
-    <state width="3780" height="594" key="GridCell.Tab.0.bottom" timestamp="1580081056606">
-      <screen x="0" y="27" width="3840" height="2068" />
+    <state width="1804" height="275" key="GridCell.Tab.0.bottom" timestamp="1580242136156">
+      <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state width="3780" height="594" key="GridCell.Tab.0.bottom/0.27.3840.2068@0.27.3840.2068" timestamp="1580081056606" />
-    <state width="3780" height="594" key="GridCell.Tab.0.center" timestamp="1580081056605">
-      <screen x="0" y="27" width="3840" height="2068" />
+    <state width="1804" height="275" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1580242136156" />
+    <state width="1804" height="275" key="GridCell.Tab.0.center" timestamp="1580242136156">
+      <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state width="3780" height="594" key="GridCell.Tab.0.center/0.27.3840.2068@0.27.3840.2068" timestamp="1580081056605" />
-    <state width="3780" height="594" key="GridCell.Tab.0.left" timestamp="1580081056604">
-      <screen x="0" y="27" width="3840" height="2068" />
+    <state width="1804" height="275" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1580242136156" />
+    <state width="1804" height="275" key="GridCell.Tab.0.left" timestamp="1580242136155">
+      <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state width="3780" height="594" key="GridCell.Tab.0.left/0.27.3840.2068@0.27.3840.2068" timestamp="1580081056604" />
-    <state width="3780" height="594" key="GridCell.Tab.0.right" timestamp="1580081056606">
-      <screen x="0" y="27" width="3840" height="2068" />
+    <state width="1804" height="275" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1580242136155" />
+    <state width="1804" height="275" key="GridCell.Tab.0.right" timestamp="1580242136156">
+      <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state width="3780" height="594" key="GridCell.Tab.0.right/0.27.3840.2068@0.27.3840.2068" timestamp="1580081056606" />
+    <state width="1804" height="275" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1580242136156" />
+    <state width="1804" height="340" key="GridCell.Tab.1.bottom" timestamp="1580222533812">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.1.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1580222533812" />
+    <state width="1804" height="340" key="GridCell.Tab.1.center" timestamp="1580222533812">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.1.center/70.27.1850.1053@70.27.1850.1053" timestamp="1580222533812" />
+    <state width="1804" height="340" key="GridCell.Tab.1.left" timestamp="1580222533812">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.1.left/70.27.1850.1053@70.27.1850.1053" timestamp="1580222533812" />
+    <state width="1804" height="340" key="GridCell.Tab.1.right" timestamp="1580222533812">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.1.right/70.27.1850.1053@70.27.1850.1053" timestamp="1580222533812" />
     <state x="1263" y="370" width="1280" height="1049" key="SettingsEditor" timestamp="1580080289679">
       <screen x="0" y="27" width="3840" height="2068" />
     </state>

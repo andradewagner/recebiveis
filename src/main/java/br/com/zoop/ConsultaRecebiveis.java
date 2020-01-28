@@ -30,12 +30,12 @@ public class ConsultaRecebiveis {
 
     }
 
-    public static String getRecebiveis() {
+    public static String listarRecebiveis() {
 
         StringBuffer content = new StringBuffer();
 
         try {
-            URL url = new URL("https://jsonplaceholder.typicode.com/todos/1");
+            URL url = new URL("https://zoop-api-internal.staging.zoop.tech/v2/marketplaces/03f19e34108f4357a9574d999eb0308c/sellers/e101e5c63743446cbd7b1d1513aa0173/prepayments");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
             BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
@@ -49,49 +49,4 @@ public class ConsultaRecebiveis {
         }
         return content.toString();
     }
-
-    public void consultaRecebiveis() throws Exception {
-
-        HttpGet request = new HttpGet("http://www.globo.com");
-
-        // add request headers
-//        request.addHeader("custom-key", "mkyong");
-//        request.addHeader(HttpHeaders.USER_AGENT, "Googlebot");
-
-        try (CloseableHttpResponse response = httpClient.execute(request)) {
-
-            // Get HttpResponse Status
-            System.out.println(response.getStatusLine().toString());
-
-            HttpEntity entity = response.getEntity();
-            Header headers = entity.getContentType();
-            System.out.println(headers);
-
-            if (entity != null) {
-                // return it as a String
-                String result = EntityUtils.toString(entity);
-                System.out.println(result);
-            }
-        }
-    }
-
-    private void sendPost() throws Exception {
-
-        HttpPost post = new HttpPost("https://httpbin.org/post");
-
-        // add request parameter, form parameters
-        List<NameValuePair> urlParameters = new ArrayList<>();
-        urlParameters.add(new BasicNameValuePair("username", "abc"));
-        urlParameters.add(new BasicNameValuePair("password", "123"));
-        urlParameters.add(new BasicNameValuePair("custom", "secret"));
-
-        post.setEntity(new UrlEncodedFormEntity(urlParameters));
-
-        try (CloseableHttpClient httpClient = HttpClients.createDefault();
-             CloseableHttpResponse response = httpClient.execute(post)) {
-
-            System.out.println(EntityUtils.toString(response.getEntity()));
-        }
-    }
-
 }
